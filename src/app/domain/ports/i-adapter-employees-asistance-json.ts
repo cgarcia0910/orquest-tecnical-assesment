@@ -1,6 +1,6 @@
 import { Observable } from "rxjs";
-import { EmployeesAsistance } from "../models/employeeAsistance";
+import { JSONEmployeesAsistance } from "../models/employeeAsistance";
 
 export interface IAdapterEmployeesAsistanceJSON {
-    getEmployeesAsistanceJSONList():Observable<EmployeesAsistance>;
+    getEmployeesAsistanceJSONList():Observable<JSONEmployeesAsistance>;
 }
