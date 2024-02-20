@@ -17,7 +17,7 @@ export class ModelEmployeesAsistanceDisplayerService implements IModelEmployeesA
                     const employeeInfo = { name: employee.name, lastName: employee.lastName }
                     return dates.reduce((acc, curr, index) => {
                         const employeeScheduleInfo = curr.schedule.find(scheduleIfno => scheduleIfno.employeeId === employee.id);
-                        return employeeScheduleInfo ? { ...acc, [`day${index}StartTime`]: employeeScheduleInfo.startTime, [`day${index}EndTime`]: employeeScheduleInfo.endTime, [`day${index}Incomplete`]: employeeScheduleInfo.startTime === undefined || employeeScheduleInfo.endTime } : acc;
+                        return employeeScheduleInfo ? { ...acc, [`day${index}StartTime`]: employeeScheduleInfo.startTime, [`day${index}EndTime`]: employeeScheduleInfo.endTime, [`day${index}Incomplete`]: employeeScheduleInfo.startTime === undefined || employeeScheduleInfo.endTime === undefined } : acc;
 
                     }, employeeInfo)
                 }

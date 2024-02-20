@@ -1,0 +1,16 @@
+<div class="card" *ngIf="dataSource">
+    <p-table [value]="dataSource" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+        <!-- <ng-template pTemplate="caption"> <input type="text"> </ng-template> -->
+        <ng-template pTemplate="header">
+            <tr>
+                <th *ngFor="let col of config">{{col?.header?.label}}</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-data>
+            <tr>
+                <td *ngFor="let col of config">{{data[col?.data?.field!]}}</td>
+            </tr>
+        </ng-template>
+        <!-- <ng-template pTemplate="summary"> Footer </ng-template> -->
+    </p-table>
+</div>
