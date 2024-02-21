@@ -1,1 +1,3 @@
-<p>date-cell works!</p>
+<ng-container *ngIf="rowData">
+    <span>{{(rowData[fieldConfig?.field!]) | date:'HH:mm':'UTC+1'}}</span>
+</ng-container>

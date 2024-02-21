@@ -8,7 +8,7 @@
         </ng-template>
         <ng-template pTemplate="body" let-data>
             <tr>
-                <td *ngFor="let col of config">{{data[col?.data?.field!]}}</td>
+                <td *ngFor="let col of config"><lib-data-cell [fieldConfig]="col?.data" [rowData]="data"></lib-data-cell></td>
             </tr>
         </ng-template>
         <!-- <ng-template pTemplate="summary"> Footer </ng-template> -->

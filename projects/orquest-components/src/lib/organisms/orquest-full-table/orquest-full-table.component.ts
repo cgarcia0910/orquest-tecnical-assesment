@@ -1,12 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { DataCellComponent } from '../../molecules/data-cell/data-cell.component';
 
 export type IFullTableDataSource = {[key: string]: unknown}[];
 
 export type IFullTableConfig = {
   header: Header
-  data: Data
+  data: FieldConfig
 }[];
 
 interface Header {
@@ -14,28 +15,23 @@ interface Header {
   id: string;
 };
 
-interface Data {
+export interface FieldConfig {
   field: string;
-};
-
-interface Field {
-  cols: Col[];
-};
-
-interface Col {
-  field: string[];
+  fieldType?: string;
 };
 
 @Component({
   selector: 'lib-orquest-full-table',
   standalone: true,
-  imports: [CommonModule, TableModule],
+  imports: [CommonModule, TableModule, DataCellComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './orquest-full-table.component.html',
   styleUrls: ['./orquest-full-table.component.css']
 })
 export class OrquestFullTableComponent {
   @Input() dataSource: IFullTableDataSource | null = [];
   @Input() config: IFullTableConfig | null = [];
+  timezoneOffset = new Date().getTimezoneOffset();
   products = [
     {
       id: '1000',

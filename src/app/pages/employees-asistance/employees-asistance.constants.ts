@@ -1,3 +1,18 @@
+export const JUST_DATE = [
+    {
+        header: {label: 'Last Name', id: 'lastNameLabel'},
+        data: {
+            field: 'day0StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: 'Name', id: 'nameLabel'},
+        data: {
+            field: 'name'
+        }
+    },
+]
 export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
     {
         header: {label: 'Name', id: 'nameLabel'},
@@ -12,129 +27,150 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Monday start', id: 'lastNameLabel'},
         data: {
-            field: 'day0StartTime'
+            field: 'day0StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Monday end', id: 'lastNameLabel'},
         data: {
-            field: 'day0EndTime'
-        }
-    },
-    {
-        header: {label: '', id: 'D0incomplete'},
-        data: {
-            field: 'day0Incomplete'
-        }
-    },
-    {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
-        data: {
-            field: 'day1StartTime'
-        }
-    },
-    {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
-        data: {
-            field: 'day1EndTime'
+            field: 'day0EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
         header: {label: '', id: 'D0incomplete'},
         data: {
-            field: 'day1Incomplete'
+            field: 'day0Incomplete',
+            fieldType: 'WARNING_ICON'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Tuesday start', id: 'lastNameLabel'},
         data: {
-            field: 'day2StartTime'
+            field: 'day1StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Tuesday end', id: 'lastNameLabel'},
         data: {
-            field: 'day2EndTime'
-        }
-    },
-    {
-        header: {label: '', id: 'D0incomplete'},
-        data: {
-            field: 'day2Incomplete'
-        }
-    },
-    {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
-        data: {
-            field: 'day3StartTime'
-        }
-    },
-    {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
-        data: {
-            field: 'day3EndTime'
+            field: 'day1EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
         header: {label: '', id: 'D0incomplete'},
         data: {
-            field: 'day3Incomplete'
+            field: 'day1Incomplete',
+            fieldType: 'WARNING_ICON'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Wednesday start', id: 'lastNameLabel'},
         data: {
-            field: 'day4StartTime'
+            field: 'day2StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Wednesday end', id: 'lastNameLabel'},
         data: {
-            field: 'day4EndTime'
-        }
-    },
-    {
-        header: {label: '', id: 'D0incomplete'},
-        data: {
-            field: 'day4Incomplete'
-        }
-    },
-    {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
-        data: {
-            field: 'day5StartTime'
-        }
-    },
-    {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
-        data: {
-            field: 'day5EndTime'
+            field: 'day2EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
         header: {label: '', id: 'D0incomplete'},
         data: {
-            field: 'day5Incomplete'
+            field: 'day2Incomplete',
+            fieldType: 'WARNING_ICON'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Thursday start', id: 'lastNameLabel'},
         data: {
-            field: 'day6StartTime'
+            field: 'day3StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Last Name', id: 'lastNameLabel'},
+        header: {label: 'Thursday end', id: 'lastNameLabel'},
         data: {
-            field: 'day6EndTime'
+            field: 'day3EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
         header: {label: '', id: 'D0incomplete'},
         data: {
-            field: 'day6Incomplete'
+            field: 'day3Incomplete',
+            fieldType: 'WARNING_ICON'
+        }
+    },
+    {
+        header: {label: 'Friday start', id: 'lastNameLabel'},
+        data: {
+            field: 'day4StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: 'Friday end', id: 'lastNameLabel'},
+        data: {
+            field: 'day4EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: '', id: 'D0incomplete'},
+        data: {
+            field: 'day4Incomplete',
+            fieldType: 'WARNING_ICON'
+        }
+    },
+    {
+        header: {label: 'Saturday start', id: 'lastNameLabel'},
+        data: {
+            field: 'day5StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: 'Saturday end', id: 'lastNameLabel'},
+        data: {
+            field: 'day5EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: '', id: 'D0incomplete'},
+        data: {
+            field: 'day5Incomplete',
+            fieldType: 'WARNING_ICON'
+        }
+    },
+    {
+        header: {label: 'Sunday start', id: 'lastNameLabel'},
+        data: {
+            field: 'day6StartTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: 'Sunday end', id: 'lastNameLabel'},
+        data: {
+            field: 'day6EndTime',
+            fieldType: 'FIXED_CET_CEST_DATE'
+        }
+    },
+    {
+        header: {label: '', id: 'D0incomplete'},
+        data: {
+            field: 'day6Incomplete',
+            fieldType: 'WARNING_ICON'
         }
     },
 ]

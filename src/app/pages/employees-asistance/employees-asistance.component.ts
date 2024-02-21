@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OrquestFullTableWeeklyFilteredComponent } from 'projects/orquest-components/src/lib/organisms/orquest-full-table-weekly-filtered/orquest-full-table-weekly-filtered.component';
-import { EMPLOYEES_ASISTANCE_CONFIG_TABLE } from './employees-asistance.constants';
+import { EMPLOYEES_ASISTANCE_CONFIG_TABLE, JUST_DATE } from './employees-asistance.constants';
 import { IModelEmployeesAsistance } from 'src/app/domain/ports/i-model-displayer';
 import { Observable } from 'rxjs';
 import { IFullTableDataSource } from 'projects/orquest-components/src/lib/organisms/orquest-full-table/orquest-full-table.component';

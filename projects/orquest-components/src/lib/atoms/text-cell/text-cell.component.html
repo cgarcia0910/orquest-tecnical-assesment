@@ -1,1 +1,3 @@
-<p>text-cell works!</p>
+<ng-container *ngIf="rowData">
+    <span>{{(rowData[fieldConfig?.field!])}}</span>
+</ng-container>

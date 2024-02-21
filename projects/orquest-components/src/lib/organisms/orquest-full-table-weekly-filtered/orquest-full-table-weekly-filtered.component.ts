@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IFullTableConfig, IFullTableDataSource, OrquestFullTableComponent } from '../orquest-full-table/orquest-full-table.component';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   standalone: true,
   imports: [CommonModule, OrquestFullTableComponent, CalendarModule, BrowserAnimationsModule, ReactiveFormsModule],
   templateUrl: './orquest-full-table-weekly-filtered.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./orquest-full-table-weekly-filtered.component.css']
 })
 export class OrquestFullTableWeeklyFilteredComponent implements OnInit{
