@@ -153,8 +153,7 @@ describe('Model employee asistance displayer service', () => {
 
   it('should convert to destination model', (done: DoneFn) => {
     iAdapterEmployeesAsistanceJSON.getEmployeesAsistanceJSONList.and.returnValue(of(EMPLOYEES_ASISTANCE_JSON as JSONEmployeesAsistance));
-    service.getAsistanceByWeek(1).subscribe(response => {
-        console.log(response);
+    service.getAsistanceByWeek(new Date(), new Date()).subscribe(response => {
         expect(response).toEqual(EXPECTED_TRANSFORMATED_OBJECT as any);
         done();
     })

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ModelEmployeesAsistanceDisplayerService } from './domain/model-employees-asistance-displayer.service';
 import { EmployeesAsistanceService } from './adapter/employees-asistance-json-adapter.service';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeesAsistanceComponent } from './pages/employees-asistance/employees-asistance.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    EmployeesAsistanceComponent
   ],
   providers: [
     // Inject domain classes into component
