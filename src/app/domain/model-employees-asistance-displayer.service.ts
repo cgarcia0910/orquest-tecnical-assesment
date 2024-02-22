@@ -9,7 +9,7 @@ export class ModelEmployeesAsistanceDisplayerService implements IModelEmployeesA
     constructor(
         @Inject('IAdapterEmployeesAsistanceJSON') private _adapterEmployeesAsistanceJSON: IAdapterEmployeesAsistanceJSON
     ) { }
-    getAsistanceByWeek(week: number): Observable<EmployeesAsistance[]> {
+    getAsistanceByWeek(dateFrom: Date, dateTo: Date): Observable<EmployeesAsistance[]> {
         return this._adapterEmployeesAsistanceJSON.getEmployeesAsistanceJSONList().pipe(
             map((employeeJson: JSONEmployeesAsistance) => {
                 const { employees = [], dates = [] } = employeeJson || {};

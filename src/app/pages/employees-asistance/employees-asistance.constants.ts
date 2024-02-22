@@ -27,14 +27,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Monday start', id: 'lastNameLabel'},
+        header: {label: 'Monday Start', id: 'lastNameLabel'},
         data: {
             field: 'day0StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Monday end', id: 'lastNameLabel'},
+        header: {label: 'Monday End', id: 'lastNameLabel'},
         data: {
             field: 'day0EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'
@@ -48,14 +48,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Tuesday start', id: 'lastNameLabel'},
+        header: {label: 'Tuesday Start', id: 'lastNameLabel'},
         data: {
             field: 'day1StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Tuesday end', id: 'lastNameLabel'},
+        header: {label: 'Tuesday End', id: 'lastNameLabel'},
         data: {
             field: 'day1EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'
@@ -69,14 +69,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Wednesday start', id: 'lastNameLabel'},
+        header: {label: 'Wednesday Start', id: 'lastNameLabel'},
         data: {
             field: 'day2StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Wednesday end', id: 'lastNameLabel'},
+        header: {label: 'Wednesday End', id: 'lastNameLabel'},
         data: {
             field: 'day2EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'
@@ -90,14 +90,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Thursday start', id: 'lastNameLabel'},
+        header: {label: 'Thursday Start', id: 'lastNameLabel'},
         data: {
             field: 'day3StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Thursday end', id: 'lastNameLabel'},
+        header: {label: 'Thursday End', id: 'lastNameLabel'},
         data: {
             field: 'day3EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'
@@ -111,14 +111,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Friday start', id: 'lastNameLabel'},
+        header: {label: 'Friday Start', id: 'lastNameLabel'},
         data: {
             field: 'day4StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Friday end', id: 'lastNameLabel'},
+        header: {label: 'Friday End', id: 'lastNameLabel'},
         data: {
             field: 'day4EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'
@@ -132,14 +132,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Saturday start', id: 'lastNameLabel'},
+        header: {label: 'Saturday Start', id: 'lastNameLabel'},
         data: {
             field: 'day5StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Saturday end', id: 'lastNameLabel'},
+        header: {label: 'Saturday End', id: 'lastNameLabel'},
         data: {
             field: 'day5EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'
@@ -153,14 +153,14 @@ export const EMPLOYEES_ASISTANCE_CONFIG_TABLE = [
         }
     },
     {
-        header: {label: 'Sunday start', id: 'lastNameLabel'},
+        header: {label: 'Sunday Start', id: 'lastNameLabel'},
         data: {
             field: 'day6StartTime',
             fieldType: 'FIXED_CET_CEST_DATE'
         }
     },
     {
-        header: {label: 'Sunday end', id: 'lastNameLabel'},
+        header: {label: 'Sunday End', id: 'lastNameLabel'},
         data: {
             field: 'day6EndTime',
             fieldType: 'FIXED_CET_CEST_DATE'

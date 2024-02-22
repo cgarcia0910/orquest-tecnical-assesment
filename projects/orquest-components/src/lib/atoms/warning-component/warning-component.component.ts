@@ -11,5 +11,5 @@ import { FieldConfig } from '../../organisms/orquest-full-table/orquest-full-tab
 })
 export class WarningComponentComponent {
   @Input() fieldConfig: FieldConfig | undefined;
-  @Input() rowData?: {[key: string]: string | number | Date | null | undefined} | undefined;
+  @Input() rowData?: {[key: string]: string | number | Date | null | boolean | undefined} | undefined;
 }
