@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ModelEmployeesAsistanceDisplayerService } from './domain/model-employees-asistance-displayer.service';
+import { EmployeesAsistanceService } from './adapter/employees-asistance-json-adapter.service';
+import { HttpClientModule } from '@angular/common/http';
+import { EmployeesAsistanceComponent } from './pages/employees-asistance/employees-asistance.component';
 
 @NgModule({
   declarations: [
@@ -10,9 +14,16 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    EmployeesAsistanceComponent
   ],
-  providers: [],
+  providers: [
+    // Inject domain classes into component
+    { provide: 'IModelEmployeesAsistance', useClass: ModelEmployeesAsistanceDisplayerService },
+    // Inject adapters into domain classes
+    { provide: 'IAdapterEmployeesAsistanceJSON', useClass: EmployeesAsistanceService },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

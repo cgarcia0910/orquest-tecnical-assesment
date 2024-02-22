@@ -1,0 +1,14 @@
+<div class="card" *ngIf="dataSource">
+    <p-table [value]="dataSource"  [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th *ngFor="let col of config">{{col?.header?.label}}</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-data>
+            <tr>
+                <td *ngFor="let col of config"><lib-data-cell [fieldConfig]="col?.data" [rowData]="data"></lib-data-cell></td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

@@ -1,0 +1,13 @@
+<ng-container *ngIf="fieldConfig">
+    <ng-container [ngSwitch]="fieldConfig.fieldType">
+        <ng-container *ngSwitchCase="'FIXED_CET_CEST_DATE'">
+            <lib-date-cell [rowData]="rowData" [fieldConfig]="fieldConfig"></lib-date-cell>
+        </ng-container>
+        <ng-container *ngSwitchCase="'WARNING_ICON'">
+            <lib-warning-cell [rowData]="rowData" [fieldConfig]="fieldConfig"></lib-warning-cell>
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+            <lib-text-cell [rowData]="rowData" [fieldConfig]="fieldConfig"></lib-text-cell>
+        </ng-container>
+    </ng-container>
+</ng-container>
